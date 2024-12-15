@@ -1,0 +1,19 @@
+  import React, { useEffect } from "react";
+  import { useNavigate } from "react-router-dom";
+
+  const SignOut = () => {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+      // Clear authentication tokens or session data
+      localStorage.removeItem("authToken");
+      sessionStorage.removeItem("authToken");
+
+      // Redirect to login page after sign out
+      navigate("/login");
+    }, [navigate]);
+
+
+  };
+
+  export default SignOut;

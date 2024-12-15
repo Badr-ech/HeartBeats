@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Logout Interface</title>
+  <link rel="stylesheet" href="./dist/output.css"> <!-- Tailwind CSS file -->
+</head>
+<body class="bg-lightPrimary">
+  <!-- Login Container -->
+  <div class="login-container flex justify-center items-center min-h-screen">
+    <div class="bg-white p-8 rounded-primary shadow-3xl w-96">
+      <h2 class="text-2xl font-poppins text-gray-700 mb-6">Login</h2>
+      <form action="#" method="POST">
+        <!-- Email Input -->
+        <div class="mb-4">
+          <label class="block text-gray-600 font-medium mb-2">Email</label>
+          <input
+            type="email"
+            name="email"
+            className ="w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <!-- Password Input -->
+        <div class="mb-4">
+          <label class="block text-gray-600 font-medium mb-2">Password</label>
+          <input
+            type="password"
+            name="password"
+            class="w-full p-3 border border-gray-300 rounded-primary focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="w-full p-3 bg-blueSecondary text-white rounded-primary hover:bg-blue-500 transition"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Logout Container (Initially Hidden) 
+  <div class="logout-container hidden flex justify-center items-center min-h-screen">
+    <div class="bg-white p-8 rounded-primary shadow-3xl w-96 text-center">
+      <h2 class="text-2xl font-poppins text-gray-700 mb-6">Logout</h2>
+      <p class="text-gray-500 mb-6">You have successfully logged in.</p>
+      <button
+        class="w-full p-3 bg-red-500 text-white rounded-primary hover:bg-red-700 transition"
+      >
+        Logout
+      </button>
+    </div>
+  </div>-->
+
+  <!-- JavaScript for handling login/logout toggle -->
+  <script src="./src/app.js"></script> <!-- Your JS file path -->
+</body>
+</html>

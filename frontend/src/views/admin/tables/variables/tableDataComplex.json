@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Ahmed Aloui",
+    "status": "Available",
+    "date": "Doctor",
+    "availability": "8AM - 5PM"
+  },
+  {
+    "name": "Karim benani",
+    "status": "Out of office",
+    "date": "Nurse",
+    "availability": "8AM - 5PM"
+  },
+  {
+    "name": "Fatima houari",
+    "status": "Available",
+    "date": "Doctor",
+    "availability": "2PM - 10PM"
+  },
+  {
+    "name": "Ahlam benali",
+    "status": "Out of office",
+    "date": "Nurse",
+    "availability": "3PM - 10PM"
+  }
+]

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'DM Sans', sans-serif !important;
+    font-feature-settings: 'kern' !important;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.5px;
+  }
+}
+
+input.defaultCheckbox::before {
+  content: url(../src/assets/svg/checked.svg);
+  color: white;
+  opacity: 0;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0px);
+}
+
+input:checked.defaultCheckbox::before {
+  opacity: 1;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+  }
+  
+  .search-bar {
+	margin-left: 10px; /* Add spacing between Chatbot button and Search bar */
+  }
+
+/* Chatbot Button Styles */
+.chatbot-button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background-color: #f9fdfe;
+  color: rgb(104, 17, 17);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chatbot-button:hover {
+  background-color: #ecf4ed;
+}
+
+/* Chatbot Modal Styles */
+.chatbot-modal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* Chatbot Header Styles */
+.chatbot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #4caf50;
+  color: white;
+}
+
+/* Chatbot Body Styles */
+.chatbot-body {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Chatbot Footer Styles */
+.chatbot-footer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chatbot-footer input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 5px;
+}
+
+.chatbot-footer button {
+  padding: 8px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
